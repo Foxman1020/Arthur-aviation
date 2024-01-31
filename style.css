@@ -1,6 +1,9 @@
 div{
     text-align: center;
 }
+body{
+  font-family: 'Courier New', Courier, monospace;
+}
 :root {
     --bg-light: #ffffff;
     --bg-medium: #f3f3f3;
@@ -9,6 +12,7 @@ div{
     --bg-white-light: #ffffff;
     --bg-white-medium: #f3f3f3;
     --bg-white-dark: #dddddd;
+    --bg-pink-light: #f9a5dd;
   
     --bg-black-light: #353535;
     --bg-black-medium: #272727;
@@ -27,7 +31,7 @@ div{
   
   a {
     text-decoration: none;
-    color: inherit;
+    color: #ffffff;
   }
   
   body {
@@ -37,7 +41,7 @@ div{
   }
   
   nav {
-    background-color: var(--bg-dark);
+    background-color: var(--bg-pink-light);
     position: fixed;
     top: 0;
     left: 0;
@@ -108,3 +112,67 @@ div{
     text-align: center;
     margin-top: 100px;
   }
+  /*product card container*/
+.main{
+  
+  position: relative;
+  top:-90px;
+  right: -300px;
+  /* background-color: rgb(196, 240, 240); */
+  /* filter: blur(8px); */
+  
+}
+.productBackgraound{
+  background-color: rgba(213, 247, 247,0.4);
+}
+.card-product-container{
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+
+}
+.card-product{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 310px;
+  box-shadow: -10px -0px 20px rgba(196, 240, 240,0.5),
+  50px 50px 20px rgba(196, 240, 240,0.5);
+  padding: 10px;
+}
+.card-product h2{
+  margin: 0;
+  padding: 10px;
+  
+}
+
+.card-product-nested-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+
+}
+.card-nested p{
+  margin: 5px;
+}
+.card-nested img {
+  width: 128px;
+  height: 102px;
+  object-fit: cover;
+
+}
+.card-product-btn{
+  font-size: 14px;
+  align-self: flex-start;
+  margin: 7px 10px; 
+  padding-left: 0;
+  background-color: transparent;
+  border:none;
+  color:rgb(25, 105, 105)
+}
+.card-product-btn:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
